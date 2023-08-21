@@ -1,0 +1,212 @@
+/* Palette https://coolors.co/palette/006d77-83c5be-edf6f9-ffddd2-e29578 */
+
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root {
+
+  /* Colors */
+  --color-primary: #83C5BE;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-secondary: #F2F7FC;
+  --color-base-1: #999999;
+  --color-base-2: #5AD439;
+  --color-base-3: #DEE3E9;
+
+  /* Border Radius */
+  --border-radius-sm: 5px;
+  --radius-default: 15px;
+  --radius-lg: 40px;
+  --radius-xlg: 50px;
+  --border-circle: 50%;
+
+  /* Shadow */
+  --shadow-sm: 0px 1px 0px 0px rgba(0, 0, 0, 0.10);
+  --shadow-default: 0px 27px 54px -30px rgba(0, 0, 0, 0.25);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-base-3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contact */
+
+.contact {
+  display: flex;
+  padding: 20px 30px 30px 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-default);
+  background-color: var(--color-white);
+}
+
+/* Person */
+
+.contact--person {
+  position: relative;
+}
+.contact--person .person--avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact--person .person--avatar img {
+  border-radius: var(--border-circle);
+  width: 98px;
+  height: 98px;
+}
+.contact--person .person--online {
+  position: absolute;
+  fill: var(--color-base-2);
+  stroke: #FFF;
+  width: 17.781px;
+  height: 17.781px;
+  top: 80px;
+  left: 30px;
+}
+.contact--person .person--name {
+  margin-top: 20px;
+  margin-bottom: 13px;
+  color: var(--color-black);
+  font-size: 26px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.3rem;
+  letter-spacing: -0.78px;
+}
+.contact--person .person--username {
+  color: var(--color-base-1);
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.2rem;
+}
+
+/* Actions */
+
+.contact--actions {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  position: relative;
+}
+.contact--actions div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-secondary);
+  border-radius: var(--border-circle);
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+}
+.contact--actions div:hover {
+  box-shadow: var(--shadow-sm);
+}
+.contact--actions div > img {
+  width: 23px;
+  height: 23px;
+}
+
+/* Contact List */
+
+.contact--list {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.list-item {
+  background: var(--color-secondary);
+  display: flex;
+  padding: 15px 20px;
+  border-radius: var(--radius-default);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.list-item:hover {
+  box-shadow: var(--shadow-sm);
+}
+.list--avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-xlg);
+}
+.list--contact {
+  width: 216px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 12px;
+  text-align: left;
+}
+.list--contact .contact-name {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.42px;
+}
+.list--contact .contact-username {
+  color: var(--color-base-1);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.list--contact-detail img {
+  width: 22px;
+  height: 22px;
+}
+
+/* New Contact */
+
+.list-item.new {
+  border-radius: var(--radius-default);
+  border: 1px dashed var(--color-primary);
+  background: #FFF;
+}
+.list-item.new .list--avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-xlg);
+  border: 2px solid var(--color-primary);
+  width: 40px;
+  height: 40px;
+}
+.list-item.new .list--avatar img {
+  width: 25px;
+  height: 25px;
+}
+.list-item.new .list--contact-detail {
+  visibility: hidden;
+}
