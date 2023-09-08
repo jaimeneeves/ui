@@ -6,4 +6,4 @@
 
 Na primeira live eu mostro como montei todo o desenho no Figma.
 
-![Link](https://www.youtube.com/live/4Z3ZbZOW3sY?si=_qHQlVfJQjUx5VkB)
+[Link da Live](https://www.youtube.com/live/4Z3ZbZOW3sY?si=_qHQlVfJQjUx5VkB)
